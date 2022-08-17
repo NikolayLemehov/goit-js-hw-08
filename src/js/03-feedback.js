@@ -13,7 +13,6 @@ formRef.addEventListener('input', throttle(onInputForm, THROTTLE_TIME));
 
 function onInputForm(e) {
   formData[e.target.name] = e.target.value;
-  console.log(formData)
   saveFormData(formData);
 }
 
