@@ -9,6 +9,7 @@ const formData = getSavedFormData();
 fillForm(formRef, formData);
 
 formRef.addEventListener('input', throttle(onInputForm, THROTTLE_TIME));
+formRef.addEventListener('submit', e => e.preventDefault());
 
 
 function onInputForm(e) {
